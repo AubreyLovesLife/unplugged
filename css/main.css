@@ -96,10 +96,8 @@ textarea {
 }
 
 
-
-
  /* ==========================================================================
-   Author's custom styles
+   Author's custom styles 
    ========================================================================== */
 html {
 	font-size: 16px;
@@ -118,8 +116,7 @@ header, footer {
     flex-flow: row wrap;;
 }
 
-.hero-area h1 {
-}
+
 
 ul {
     padding: 0;
@@ -164,6 +161,7 @@ input {
     flex-flow: row wrap;
 }
 
+
 .features-item-description {
     padding-left: 3.5em;
     padding-right: 3.5em;
@@ -188,6 +186,8 @@ input {
 footer {
     text-align: center;
 }
+
+
       
 
 /********************************** About Styles ****************************/
@@ -204,12 +204,6 @@ footer {
 
 
 /************************************* FAQ Styles ****************************/
-
-
-
-
-
-
 
 
 
@@ -305,9 +299,185 @@ footer {
    Modify as content requires.
    ========================================================================== */
 
-   @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+
+
+@media screen and (min-width: 768px) /**** Tablet Styles ******/
+{
+    html {
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    header div.content-wrapper {
+        width: 100%;
+    }
+
+    header a {
+        float: left;
+        background: pink;
+    } 
+    ul {
+        float: right;
+    }
+
+   .hero-area h1 {
+       padding-left: 1.7em;
+       padding-right: 1.7em;
+   } 
+
+   .form-description {
+       padding-left: 3.3em;
+       padding-right: 3.3em;
+   }
+   
+   .content-wrapper .form {
+       background: purple;
+       margin-left: 3.3em;
+       margin-right: 3.3em;
+   }
+   .form input {
+       flex-grow: initial;
+   }
+
+   
+    .features div.content-wrapper h3 {
+        padding-left:3.3em;
+    }
+
+    .features-items {
+        width: 100%;
+    }
+
+    .left {
+        width: 50%;
+        background: lightblue;
+        float: left;
+    }
+    .right  {
+        width: 50%;
+        background: pink;
+        float: left;
+        clear: right;
+    }
+
+    .features-item-description {
+        color: black;
+        padding-left: 4.4em;
+        padding-right: 4.4em;
+    }
+
+    .features-items article {
+        background: pink;
+    }
+
+    .reviews {
+        width: 100%;
+        margin-right: 3em;
+        background: yellow;
+    }
+
+    .reviews h2  {
+        padding-left: 3.5rem;
+    }
+    .reviews h3 {
+        padding-left: 3.5rem;
+    }
+    .reviews p {
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+
+
+    
+    footer .content-wrapper {
+        width: 100%;
+    }
+
+    div .footer-content {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    footer .contact {
+        background-color: blue;
+        flex-basis: 40%
+
+    }
+    footer .social {
+        background-color: pink;
+        flex-basis: 40%;
+    }
+
+
+
+    /************** About Tablet Styles ****************/
+
+    .mission-content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+ 
+    .mission-content p {
+        width: 100%;
+    }
+ 
+    .contact-section, .content-wrapper h2 {
+        width: 100%;
+    }
+ 
+    .contact-content {
+        display: flex;
+        align-items: center;
+        background: yellow;
+        width: 100%;
+    }
+    .contact-content div {
+        flex-basis: 50%;
+    }
+
+    body {
+        padding: 0px 3rem;
+    }
+
+
+
+    /************** FAQ Tablet Styles **********/
+
+    
+    div.content-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around; 
+        
+    }
+    
+    div.question {
+        flex-basis: 40%;
+
+    }
+    .faq h2 {
+        width: 100%;
+    }
+
+
+
 }
+
+
+
+
+
+@media screen and (min-width: 1200px)  /**** Desktop Laptop Styles ******/
+{
+    
+}
+
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
