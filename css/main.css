@@ -104,8 +104,22 @@ html {
 }
 
 body {
-	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     padding: 0px 1.5rem;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h3, 
+h4 {
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    color: #e2e3ed;
+    text-decoration: none;
 }
 
 
@@ -113,10 +127,8 @@ header, footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;;
+    flex-flow: row wrap;
 }
-
-
 
 ul {
     padding: 0;
@@ -191,6 +203,8 @@ footer {
       
 
 /********************************** About Styles ****************************/
+
+
 
 .mission {
     display: flex;
@@ -415,7 +429,7 @@ footer {
 
 
 
-    /************** About Tablet Styles ****************/
+    /************** About Tablet Styles **************/
 
     .mission-content {
         display: flex;
@@ -465,18 +479,192 @@ footer {
         width: 100%;
     }
 
-
-
 }
 
-
-
-
-
-@media screen and (min-width: 1200px)  /**** Desktop Laptop Styles ******/
+@media screen and (min-width: 1200px)  /************* Desktop Laptop Styles *********************/
 {
+    body {
+        padding: 0px 6rem;
+    }
+
+    /*********** Header ***********/
+
+    header a {
+        background: red;
+        float: none;
+        width: auto;
+        padding-left: 2rem;
+        font-size: 1.125rem;
+    }
+    header div.content-wrapper {
+        width: 100%;
+        height: 6.25rem;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    .hero-area div.content-wrapper h1 {
+        background: blue;
+        width: 100%;
+        height: 31.25rem;
+        padding-right: 20rem;
+        padding-left: 0rem;
+        font-size: 3.75rem;
+        margin-top: 0px;
+    }
+
+    section.hero-area div.content-wrapper div.form {
+        width: 50%;
+    }
+
+    /***** Aside: form and email input ******/
+
+    div.content-wrapper {
+        justify-content: space-around;
+        width: auto;
+    }
+    div.content-wrapper .form {
+        margin: 0;
+    }
+
+    aside {
+        height: 15.625rem;
+        align-items: center;
+        padding-left: 8rem;
+        padding-right: 8rem;
+        width: auto;
+    }
+    
+    aside h3 {
+        font-size: 1.875rem;
+        margin: 0;
+    }
+    aside p {
+        font-size: 1.125rem;
+        margin: 0;
+    }
+    
+    aside div.form-description {
+        width: 33%;
+        padding: 0;
+        margin: 0;
+    }
+
+    div.form-description p,h3 {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+
+    div.form {
+        width: 33%;
+        margin: 0;
+        padding: 0;
+    }
+
+    /********** Features *********/
+
+    section.features h3 {
+        font-size: 2.25rem;
+    }
+    section.features p {
+        font-size: 1.124rem;
+    }
+
+    .features-item-description {
+        color: black;
+        padding-left: 12.4rem;
+        padding-right: 12.4rem;
+    }
+
+
+    /*********** Reviews ********/
+
+    .reviews div.content-wrapper {
+        padding-left: 7.5rem;
+        padding-right: 7.5rem;
+        padding-bottom: 5rem;
+    }
+    section.reviews h2 {        
+        margin-top: 3rem;
+        padding-left: 0px;
+        font-size: 2.25rem;
+    }
+    section.reviews article {
+        width: 50%;
+    }
+    .reviews h3 {
+        padding-left: 1.5rem;
+        font-size: 1.875rem;
+    }
+    .reviews p {
+        padding-left: 1.5rem;
+        padding-right: 0;
+        font-size: 1.125rem;
+    }
+    section.reviews img {
+        width: 44%; 
+    }
+
+/********** Footer ************/
+
+    address h4 {
+        font-size: 1.875rem;
+        background: greenyellow;
+    }
+    address p {
+        font-size: 1.125rem;
+        background: grey;
+    }
+    div.social h4 {
+        font-size: 1.875rem;
+    }
     
 }
+
+
+    div.copyright p {
+        font-size: 1.125rem;
+    }
+
+
+    /*************************** About page laptop styles **********/
+
+    body#about {
+        padding: 0px 12rem;
+    }
+    header {
+        font-size: 1.125rem;
+    }
+    div.mission-content {
+        display: block;
+    }
+    div.mission-content h1 {
+        font-size: 3rem;
+    }
+    div.mission-paragraphs {
+        display: flex;
+    }
+    div.mission-paragraphs p {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        font-size: 1.125rem;
+    }
+    .contact-section div.content-wrapper {
+        width: 100%;
+        font-style: normal;
+    }
+
+    .contact-section p,h4 {
+        font-style: normal;
+    }
+    address p {
+        font-style: normal;
+    }
+
+    .contact-section .content-wrapper h2 {
+        font-size: 3rem;
+    }
+
 
 
 @media print,
