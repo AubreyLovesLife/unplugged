@@ -150,6 +150,8 @@ header, footer {
     color: #e2e3ed;
 }
 
+
+
 ul {
     padding: 0;
     display: flex;
@@ -160,6 +162,15 @@ header nav li {
     list-style-type: none; 
 }
 
+header figure {
+    width: 100%;
+}
+header img{
+    width: 90%;
+    padding-left:5%;
+    padding-right: 5%;
+    padding-top: 5%;
+}
 .hero-area {
     padding: 0px 1.5rem 0px 1.5rem;
     display: flex;
@@ -205,15 +216,25 @@ section.features {
     padding-top: 1rem;
     color: #e2e3ed;
 }
+.features i {
+	font-size: 3.75em;
+    margin-bottom: 40px;
+}
+p.fontawesome-icon {
+    text-align: center;
+}
+
 section.features h3 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    text-align: center;
+    padding-bottom: 40px;
 }
 
 .features-item-description {
     padding-left: 3.5em;
     padding-right: 3.5em;
     padding-bottom: 2rem;
-    font-size: 0.875em;
+    font-size: 1em;
     text-align: center;
     margin: 0px;
 }
@@ -252,6 +273,15 @@ footer {
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
+footer div.social-icons {
+display: flex;
+justify-content: center;
+}
+div.social-icons p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 
 aside .form {
     margin-top: 30px;
@@ -482,15 +512,19 @@ section.contact-section div.content-wrapper{
         width: 100%;
     }
 
+    header img{
+        width: 40%;
+        padding-left:5%;
+        padding-right: 5%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        float: left;
+    }
+
     header div.content-wrapper {
         width: 100%;
     }
 
-    header a {
-        float: left; 
-        padding-left: 25px;
-        padding-right: 25px;
-    } 
     ul {
         float: right;
     }
@@ -514,13 +548,25 @@ section.contact-section div.content-wrapper{
     footer .copyright {
         width: 100%;
     }
+    footer div.social-icons {
+        display: flex;
+        justify-content: center;
+    }
+    footer a {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
 
     /********* Tablet Homepage *********/
     /***********/
-    .hero-area h1 {             
+    .hero-area {             
        padding-left: 1.7em;
        padding-right: 1.7em;
     } 
+    .hero-area h1 {
+        font-size: 3rem;
+    }
     .form-description {
        padding-left: 3.3em;
        padding-right: 3.3em;
@@ -535,15 +581,20 @@ section.contact-section div.content-wrapper{
     aside div.content-wrapper {
         padding: 1.5rem 15% 0px 15%;
     }
-    .features div.content-wrapper h3 {
-        padding-left:3.3em;
-    }
     section.features {
         display: flex;
+        padding-bottom: 3rem;
     }
     .features-items {
         width: 100%;
     }
+
+    section.features h3 {
+        font-size: 2.3rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
     .left {
         width: 50%;
         float: left;
@@ -635,8 +686,6 @@ section.contact-section div.content-wrapper{
         top: 0; 
         left: 0; 
     }
-
-
 
 
 
@@ -733,9 +782,14 @@ section.contact-section div.content-wrapper{
     /*********** Desktop/Laptop Homepage Styles ***********/
     /***********/
     
+    .hero-area div.content-wrapper {
+        height: 31.25rem;
+    }
+    .hero-area {
+        height: 45rem;
+    }
     .hero-area div.content-wrapper h1 {
         width: 100%;
-        height: 31.25rem;
         padding-top: 2rem;
         font-size: 3.75rem;
         margin-top: 0px;
@@ -791,15 +845,18 @@ section.contact-section div.content-wrapper{
     /********* Features ********/
 
     section.features h3 {
-        font-size: 2.25rem;
+        font-size: 3rem;
     }
     section.features p {
-        font-size: 1.124rem;
+        font-size: 1.524rem;
     }
-    .features-item-description {
-        padding-left: 12.4rem;
-        padding-right: 12.4rem;
+
+    .features i {
+        font-size: 4em;
+        margin-bottom: 40px;
     }
+    
+
 
     /********** Reviews ********/
 
