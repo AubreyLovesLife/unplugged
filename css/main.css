@@ -105,21 +105,35 @@ html {
 
 body {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    padding: 0px 1.5rem;
+    padding: 0px 0px;
 }
 
+h1 {
+    font-weight: normal;
+}
 h2 {
     font-family: 'Poppins', sans-serif;
+    font-weight: normal;
 }
 
 h3, 
 h4 {
     font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    margin: 0px;
 }
 
-a{
+a {
     color: #e2e3ed;
     text-decoration: none;
+}
+
+img { 
+	width: 100%;
+}
+ 
+figure {
+        margin: 0;
 }
 
 
@@ -128,6 +142,12 @@ header, footer {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background: #202322;
+    color: #e2e3ed;
+    font-style: normal;
+}
+address p {
+    font-style: normal;
 }
 
 ul {
@@ -137,28 +157,30 @@ ul {
 }
 
 header nav li {
-    list-style-type: none;  
-    background: pink;
+    list-style-type: none; 
 }
 
 .hero-area {
+    padding: 0px 1.5rem 0px 1.5rem;
     display: flex;
     flex-flow: row wrap;
+    background-image: url("../img/jake-melara-30679-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    color: #e2e3ed;
 }
-
+/**************************/
 aside {
+    color: #e2e3ed;
     display: flex;
     flex-flow: row wrap;
     width: 100%;
-    background: grey;
+    background: #527158;
 }
-
-input[type="button" i] {
-    padding: 0px;
-}
-input {
-    padding: 0;
-    border: 0;
+aside div.content-wrapper {
+    padding: 1.5rem 1.5rem 0px 1.5rem;
 }
 
 .form input {
@@ -167,53 +189,143 @@ input {
     height: 2em;
     margin-bottom: 1em;
 }
-
+/*********************/
 #features {
     display: flex;
     flex-flow: row wrap;
 }
-
+section.features div.content-wrapper {
+    padding: 1.5rem 1.5rem 0px 1.5rem;
+}
+section.features {
+    background: url('../img/rawpixel-unsplash1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 1rem;
+    color: #e2e3ed;
+}
+section.features h3 {
+    font-size: 1.4rem;
+}
 
 .features-item-description {
     padding-left: 3.5em;
     padding-right: 3.5em;
+    padding-bottom: 2rem;
     font-size: 0.875em;
     text-align: center;
+    margin: 0px;
 }
 
 #features .features-items {
     display: flex;
     flex-flow: row wrap;
 }
-
+/****************************/
 .reviews {
     display: flex;
     flex-flow: row wrap;
 }
+section.reviews {
+    background: #2a423a;
+    color: #e2e3ed;
+}
+
+.reviews h2, .reviews h3 {
+    padding-top: 1rem;
+    font-weight: normal;
+}
+
+.reviews div.content-wrapper {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
 
 .reviews .content-wrapper p {
     text-align: justify;
+    padding-bottom: 1.5rem;
 }
-
+/**************************/
 footer {
     text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
+aside .form {
+    margin-top: 30px;
+}
+   
+input[type=text] {
+box-sizing: border-box;
+width: 100%;
+margin-top: .5rem;
+margin-bottom: .5rem;
+color: #2a423a;
+font-style: italic;
+}
 
-      
+input[type=button] {
+width: 100%;
+background-color: #2a423a;
+font-family: 'Poppins', Helvetica, Arial, sans-serif;
+font-weight: 500;
+font-size: 1.125em;
+margin-top: .5rem;
+margin-bottom: 2.5rem;
+color: #e2e3ed;
+border: none;
+text-align: center;
+text-transform: uppercase;
+}
+    
 
 /********************************** About Styles ****************************/
 
-
-
 .mission {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row wrap; 
 }
-
+div.mission-paragraphs {
+    line-height: 1.8rem;
+}
+.mission div.content-wrapper {
+    background: #527158;
+    color:  #e2e3ed;
+    padding: 2rem 1.8rem 2rem 1.8rem;
+}
+.mission h1 {
+    line-height: 2.5rem;
+    margin-top: 0px;
+    display: block;
+}
+section.contact-section {
+    background: #2a423a;
+    color:  #e2e3ed;
+    padding: 2rem 1.8rem 2rem 1.8rem;
+}
+.contact-section{
+    text-align: center;
+}
 .contact-section {
     display: flex;
     flex-flow: row wrap;
+}
+section.contact-section div.content-wrapper address.contact-content {
+    text-align: center;
+    display: block;
+    padding-bottom: 2rem;
+}
+.contact-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+section.contact-section h4  {
+    font-style: normal;
+    font-size: 1.25rem;
 }
 
 
@@ -221,8 +333,29 @@ footer {
 
 
 
+section.faq h1 {
+    margin-top: 0px;
+    padding-top: 3rem;
+}
+section.faq {
+    background: #527158;
+    color:  #e2e3ed;
+    font-weight: normal;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+div.question {
+    padding-bottom: 2rem;
+}
 
+section.contact-section {
+    padding: 0;
+}
 
+section.contact-section div.content-wrapper{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
 
 
 
@@ -315,12 +448,12 @@ footer {
 
 
 
-@media screen and (min-width: 768px) /**** Tablet Styles ******/
+@media screen and (min-width: 768px)    /*************** Tablet Styles *****************/
 {
     html {
         width: 100%;
     }
-
+    
     header {
         width: 100%;
     }
@@ -330,170 +463,196 @@ footer {
     }
 
     header a {
-        float: left;
-        background: pink;
+        float: left; 
+        padding-left: 25px;
+        padding-right: 25px;
     } 
     ul {
         float: right;
     }
 
-   .hero-area h1 {
-       padding-left: 1.7em;
-       padding-right: 1.7em;
-   } 
-
-   .form-description {
-       padding-left: 3.3em;
-       padding-right: 3.3em;
-   }
-   
-   .content-wrapper .form {
-       background: purple;
-       margin-left: 3.3em;
-       margin-right: 3.3em;
-   }
-   .form input {
-       flex-grow: initial;
-   }
-
-   
-    .features div.content-wrapper h3 {
-        padding-left:3.3em;
-    }
-
-    .features-items {
-        width: 100%;
-    }
-
-    .left {
-        width: 50%;
-        background: lightblue;
-        float: left;
-    }
-    .right  {
-        width: 50%;
-        background: pink;
-        float: left;
-        clear: right;
-    }
-
-    .features-item-description {
-        color: black;
-        padding-left: 4.4em;
-        padding-right: 4.4em;
-    }
-
-    .features-items article {
-        background: pink;
-    }
-
-    .reviews {
-        width: 100%;
-        margin-right: 3em;
-        background: yellow;
-    }
-
-    .reviews h2  {
-        padding-left: 3.5rem;
-    }
-    .reviews h3 {
-        padding-left: 3.5rem;
-    }
-    .reviews p {
-        padding-left: 3.5rem;
-        padding-right: 3.5rem;
-    }
-
-
-    
     footer .content-wrapper {
         width: 100%;
+        padding: 0%;
     }
-
     div .footer-content {
         width: 100%;
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
-
     footer .contact {
-        background-color: blue;
-        flex-basis: 40%
-
+        flex-basis: 50%
     }
     footer .social {
-        background-color: pink;
-        flex-basis: 40%;
+        flex-basis: 50%;
+    }
+    footer .copyright {
+        width: 100%;
     }
 
-
-
-    /************** About Tablet Styles **************/
-
-    .mission-content {
+    /********* Tablet Homepage *********/
+    /***********/
+    .hero-area h1 {             
+       padding-left: 1.7em;
+       padding-right: 1.7em;
+    } 
+    .form-description {
+       padding-left: 3.3em;
+       padding-right: 3.3em;
+    }  
+    .content-wrapper .form {
+       margin-left: 3.3em;
+       margin-right: 3.3em;
+    }
+   .form input {
+       flex-grow: initial;
+    }   
+    aside div.content-wrapper {
+        padding: 1.5rem 15% 0px 15%;
+    }
+    .features div.content-wrapper h3 {
+        padding-left:3.3em;
+    }
+    section.features {
         display: flex;
-        justify-content: space-around;
-        align-items: center;
     }
- 
+    .features-items {
+        width: 100%;
+    }
+    .left {
+        width: 50%;
+        float: left;
+    }
+    .right  {
+        width: 50%;
+        float: left;
+        clear: right;
+    }
+    .features-item-description {
+        padding-left: 4.4em;
+        padding-right: 4.4em;
+    }
+    section.reviews div.content-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center
+    }
+    .reviews {
+        width: 100%;
+        margin-right: 3em;
+    }
+    .reviews h2  {
+        text-align: center;
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+    .reviews h3 {
+        padding-left: 3.5rem;
+        padding-bottom: .5rem;
+    }
+    .reviews p {
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    .reviews figure {
+        width: 50%;
+        padding-bottom: 2rem;
+    }
+    .reviews article {
+        width: 50%;
+        align-content: center;
+    }   
+   
+    /************** Tablet About Styles **************/
+    /***********/
+    
     .mission-content p {
         width: 100%;
     }
- 
+    div.mission-content {
+        display: block;
+    }
+    div.mission-paragraphs {
+        display: flex;
+    }
+    div.mission-paragraphs p {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 1.125rem;
+        line-height: 1.8rem;
+    }
+    .mission div.content-wrapper {
+        padding: 2rem 2rem 2rem 2rem;
+    }
+    .mission h1 {
+        line-height: 2.5rem;
+        padding-right: 1rem;
+        text-align: center;
+        font-size: 2rem;
+    }
+
     .contact-section, .content-wrapper h2 {
         width: 100%;
     }
- 
-    .contact-content {
-        display: flex;
-        align-items: center;
-        background: yellow;
+    section.contact-section div.content-wrapper {
         width: 100%;
     }
-    .contact-content div {
-        flex-basis: 50%;
-    }
-
-    body {
-        padding: 0px 3rem;
-    }
-
-
-
-    /************** FAQ Tablet Styles **********/
-
     
-    div.content-wrapper {
+    section.contact-section div.content-wrapper address.contact-content {
+        display: flex;
+        justify-content: space-around;
+    }
+    section.contact-section h2 {
+        font-size: 2.1rem;
+        font-weight: normal;
+    }
+
+    /************** Tablet FAQ Styles **********/
+    /***********/
+    
+    #faq-page header {
+        height: 100px;
+    }
+    section.faq h1 {
+        padding-left: 5%;
+        padding-top: 5rem;
+    }
+    section.faq div.content-wrapper {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around; 
-        
+        width: 100%;
+        justify-content: space-around;
+        padding-bottom: 5rem;
+    }    
+    .question .content-wrapper h2 {
+        width: auto;
     }
-    
     div.question {
         flex-basis: 40%;
-
+        font-size: .9rem;
     }
     .faq h2 {
-        width: 100%;
+        font-size: 1rem;
+        padding-right: 15px;
     }
-
+    footer .content-wrapper {
+        width: 100%;
+        padding: 0%;
+    }
 }
 
-@media screen and (min-width: 1200px)  /************* Desktop Laptop Styles *********************/
+@media screen and (min-width: 1200px)  /************* Desktop/Laptop Styles *********************/
 {
     body {
-        padding: 0px 6rem;
+        padding: 0px 0rem;
     }
-
-    /*********** Header ***********/
-
+    /********** Header ***********/
     header a {
-        background: red;
         float: none;
         width: auto;
         padding-left: 2rem;
+        padding-right: 2rem;
         font-size: 1.125rem;
     }
     header div.content-wrapper {
@@ -502,39 +661,63 @@ footer {
         justify-content: space-between;
         align-content: center;
     }
+    /********** Footer ************/
+    address h4 {
+        font-size: 1.875rem;
+        font-style: normal;
+    }
+    address p {
+        font-size: 1.125rem;
+    }
+    div.copyright p {
+        font-size: 1.125rem;
+    }
+    footer .contact {
+        flex-basis: 50%;
+    }
+    div.footer-content h4 {
+        font-size: 2rem;
+    }
 
+    div.footer-content p {
+        font-size: 1.7rem;
+    }
+
+    /*********** Desktop/Laptop Homepage Styles ***********/
+    /***********/
+    
     .hero-area div.content-wrapper h1 {
-        background: blue;
         width: 100%;
         height: 31.25rem;
-        padding-right: 20rem;
-        padding-left: 0rem;
+        padding-top: 2rem;
         font-size: 3.75rem;
         margin-top: 0px;
     }
-
     section.hero-area div.content-wrapper div.form {
         width: 50%;
     }
 
-    /***** Aside: form and email input ******/
+    /**** Aside: form and email input *****/
 
     div.content-wrapper {
         justify-content: space-around;
-        width: auto;
+        width: 100%;
+
+    }
+    aside div.content-wrapper {
+        display: flex;
+        padding: 1rem 0 0 0;
     }
     div.content-wrapper .form {
         margin: 0;
     }
-
     aside {
         height: 15.625rem;
         align-items: center;
         padding-left: 8rem;
         padding-right: 8rem;
         width: auto;
-    }
-    
+    } 
     aside h3 {
         font-size: 1.875rem;
         margin: 0;
@@ -542,26 +725,23 @@ footer {
     aside p {
         font-size: 1.125rem;
         margin: 0;
-    }
-    
+    }   
     aside div.form-description {
         width: 33%;
         padding: 0;
         margin: 0;
     }
-
     div.form-description p,h3 {
         padding-left: 0rem;
         padding-right: 0rem;
     }
-
     div.form {
         width: 33%;
         margin: 0;
         padding: 0;
     }
 
-    /********** Features *********/
+    /********* Features ********/
 
     section.features h3 {
         font-size: 2.25rem;
@@ -569,15 +749,12 @@ footer {
     section.features p {
         font-size: 1.124rem;
     }
-
     .features-item-description {
-        color: black;
         padding-left: 12.4rem;
         padding-right: 12.4rem;
     }
 
-
-    /*********** Reviews ********/
+    /********** Reviews ********/
 
     .reviews div.content-wrapper {
         padding-left: 7.5rem;
@@ -600,37 +777,13 @@ footer {
         padding-left: 1.5rem;
         padding-right: 0;
         font-size: 1.125rem;
-    }
-    section.reviews img {
-        width: 44%; 
-    }
+        line-height: 2.3rem;
+    }  
 
-/********** Footer ************/
-
-    address h4 {
-        font-size: 1.875rem;
-        background: greenyellow;
-    }
-    address p {
-        font-size: 1.125rem;
-        background: grey;
-    }
-    div.social h4 {
-        font-size: 1.875rem;
-    }
-    
-}
-
-
-    div.copyright p {
-        font-size: 1.125rem;
-    }
-
-
-    /*************************** About page laptop styles **********/
+    /*************************** Desktop/Laptop About styles **********/
 
     body#about {
-        padding: 0px 12rem;
+        padding: 0px 0px;
     }
     header {
         font-size: 1.125rem;
@@ -648,23 +801,61 @@ footer {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
         font-size: 1.125rem;
+        line-height: 2.5rem;
     }
+    .mission div.content-wrapper {
+        padding: 3rem 5rem 3rem 5rem;
+    }
+    .mission h1 {
+        font-size: 2.8rem;
+        line-height: 3.8rem;
+        padding-left: 24px;
+        padding-right: 4rem;
+        text-align: center;
+        
+    }
+
     .contact-section div.content-wrapper {
         width: 100%;
         font-style: normal;
+        padding: 2.5rem 0 2.5rem 0;
     }
 
-    .contact-section p,h4 {
+    .contact-section p {
         font-style: normal;
+        font-size: 1.25rem;
+        text-align: left;
     }
+    section.contact-section h4 {
+        font-size: 1.875rem;
+        font-style: normal;
+        text-align: left;
+    }
+   
     address p {
         font-style: normal;
     }
 
     .contact-section .content-wrapper h2 {
-        font-size: 3rem;
+        font-size: 2.3rem;
     }
 
+    /*************************** Desktop/Laptop FAQ styles **********/
+
+    section.faq h1 {
+        font-size: 3rem;
+        padding-left: 2.3rem;
+    }
+
+    div.question h2 {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+    }
+
+    div.question {
+        font-size: 1.3rem;
+        line-height: 2.1rem;
+    }
 
 
 @media print,
