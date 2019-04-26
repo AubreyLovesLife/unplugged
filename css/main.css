@@ -18,6 +18,7 @@
     line-height: 1.4;
 }
 
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -133,7 +134,10 @@ img {
 }
  
 figure {
-        margin: 0;
+    margin: 0;
+}
+address {
+    font-style: normal;
 }
 
 
@@ -144,10 +148,6 @@ header, footer {
     flex-flow: row wrap;
     background: #202322;
     color: #e2e3ed;
-    font-style: normal;
-}
-address p {
-    font-style: normal;
 }
 
 ul {
@@ -300,6 +300,28 @@ div.mission-paragraphs {
     margin-top: 0px;
     display: block;
 }
+
+
+section.map {
+    padding-bottom: 2rem;
+    background-color: #2a423a;
+}
+.map figure {
+    width: 100%;
+    height: 0; 
+    padding-bottom: 80%; 
+    overflow: hidden;
+    position: relative;
+}
+ 
+.map iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+}
+
 section.contact-section {
     background: #2a423a;
     color:  #e2e3ed;
@@ -324,7 +346,6 @@ section.contact-section div.content-wrapper address.contact-content {
 }
 
 section.contact-section h4  {
-    font-style: normal;
     font-size: 1.25rem;
 }
 
@@ -355,6 +376,7 @@ section.contact-section {
 section.contact-section div.content-wrapper{
     padding-left: 2rem;
     padding-right: 2rem;
+    width: 100%;
 }
 
 
@@ -452,6 +474,8 @@ section.contact-section div.content-wrapper{
 {
     html {
         width: 100%;
+        height: 100%;
+        background: #202322;
     }
     
     header {
@@ -592,6 +616,30 @@ section.contact-section div.content-wrapper{
         font-size: 2rem;
     }
 
+    section.map {
+        padding: 3rem 12rem 0 12rem;
+        background-color: #2a423a;
+    }
+    .map figure {
+        width: 100%;
+        height: 0; 
+        padding-bottom: 60%; 
+        overflow: hidden;
+        position: relative;
+    }
+     
+    .map iframe {
+        width: 100%;
+        height: 100%;
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+    }
+
+
+
+
+
     .contact-section, .content-wrapper h2 {
         width: 100%;
     }
@@ -664,7 +712,6 @@ section.contact-section div.content-wrapper{
     /********** Footer ************/
     address h4 {
         font-size: 1.875rem;
-        font-style: normal;
     }
     address p {
         font-size: 1.125rem;
@@ -817,7 +864,6 @@ section.contact-section div.content-wrapper{
 
     .contact-section div.content-wrapper {
         width: 100%;
-        font-style: normal;
         padding: 2.5rem 0 2.5rem 0;
     }
 
@@ -832,9 +878,6 @@ section.contact-section div.content-wrapper{
         text-align: left;
     }
    
-    address p {
-        font-style: normal;
-    }
 
     .contact-section .content-wrapper h2 {
         font-size: 2.3rem;
